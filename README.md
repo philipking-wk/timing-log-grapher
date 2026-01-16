@@ -15,6 +15,11 @@ print('!!! cool-func start: ${DateTime.now().millisecondsSinceEpoch}');
 await coolFunc();
 print('!!! cool-func end: ${DateTime.now().millisecondsSinceEpoch}');
 ```
+you **can** post directly from the chrome console, so the following will work
+```
+14:41:14.894 dart_sdk.js:sourcemap:26730 !!! thing start: 1768509674894
+14:41:14.905 dart_sdk.js:sourcemap:26730 !!! thing end: 1768509674905
+```
 
 3. Click visualize button
 4. ???
