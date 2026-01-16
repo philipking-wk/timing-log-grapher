@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Timing Grapher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>cool secret tool that isnt just a datadog copy</h1>
+
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs-container">
+            <div class="tabs-header" id="tabs-header">
+                <!-- Tabs will be dynamically added here -->
+            </div>
+            <button class="tab-add-btn" onclick="addNewTab()" title="Add New Tab">+</button>
+            <button class="history-btn" onclick="toggleHistory()" title="View History">History</button>
+        </div>
+
+        <!-- History Panel -->
+        <div class="history-panel" id="history-panel" style="display: none;">
+            <div class="history-header">
+                <h3>Run History (Last 10)</h3>
+                <button onclick="toggleHistory()">Close</button>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- History items will be added here -->
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container" id="tab-content-container">
+            <!-- Tab content will be dynamically added here -->
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
