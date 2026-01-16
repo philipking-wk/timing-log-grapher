@@ -29,3 +29,6 @@ print('!!! cool-func end: ${DateTime.now().millisecondsSinceEpoch}');
 - track rearrangement and resize
 - hisory (kinda works)
 - saves to local storage, so reloads keep your data : )
+
+## notes
+I've have found that though these prints I get extremely similar (+-5ms) times to what is reported through tracing, so while you shouldn't use this directly for final performance measurments, it is a very close representation of what the traces will return.
