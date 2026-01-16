@@ -6,8 +6,14 @@ A simple tool to parse timing log files and generate graphical representations o
 
 2. Enter logs in format:
 ```
-<name> start: <time in mil>
-<name> end: <time in mil>
+!!! <name> start: <time in mil>
+!!! <name> end: <time in mil>
+```
+example in dart
+```
+print('!!! cool-func start: ${DateTime.now().millisecondsSinceEpoch}');
+await coolFunc();
+print('!!! cool-func end: ${DateTime.now().millisecondsSinceEpoch}');
 ```
 
 3. Click visualize button
